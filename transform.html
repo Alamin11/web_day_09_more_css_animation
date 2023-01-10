@@ -8,7 +8,8 @@
     <title>CSS transform</title>
     <style>
         .container,
-        .inner {
+        .inner,
+        .skew {
             width: 150px;
             height: 150px;
             border: 1px solid khaki;
@@ -25,6 +26,16 @@
 
 
         }
+
+        #skewContainer {
+            transform: translate(200px);
+        }
+
+        .skew {
+            background-color: aqua;
+            transform: skewY(20deg);
+
+        }
     </style>
 </head>
 
@@ -38,6 +49,9 @@
     </div>
     <div class="box container">
         <div class="inner">Box-3</div>
+    </div>
+    <div class="container box" id="skewContainer">
+        <div class="skew">skew box</div>
     </div>
 </body>
 
